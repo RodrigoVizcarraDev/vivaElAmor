@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #ED213A;  /* fallback for old browsers */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    min-height: 100vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    background-color: #5c0303;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.card {
+    width: 90%;
+    height: auto;
+    border: 5px solid rgba(253, 253, 253, 0.325);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.contenedorImagen {
+    text-align: center;
+}
+.contenedorImagen img {
+    width: 90%;
+    animation: animacionCorazon ease-in-out 2s infinite alternate;
+}
+@keyframes animacionCorazon {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(10%);
+    }
+}
+.contenedorTexto {
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+@media screen and (min-width:768px){
+    .card {
+        width: 60%;
+        max-width: 1000px;
+    }
+    .contenedorImagen img {
+        width: 70%;
+    }
+}
